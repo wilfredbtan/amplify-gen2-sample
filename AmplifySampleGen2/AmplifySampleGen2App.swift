@@ -27,6 +27,8 @@ struct AmplifySampleGen2App: App {
             try Amplify.add(plugin: dataStorePlugin)
             
             try Amplify.configure(with: .amplifyOutputs)
+            
+            print("initialized amplify")
         } catch {
             print("Unable to configure Amplify \(error)")
         }
